@@ -1,0 +1,28 @@
+#MainPane{
+    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #3B82F6);
+}
+
+#UserPane{
+    -fx-background-color: white;
+}
+
+#viewAllBookButton{
+    -fx-background-color: #03A9F4;
+    -fx-text-fill: #FFFFFF;
+}
+
+#addBookButton{
+    -fx-background-color: #009688;
+    -fx-text-fill: #FFFFFF;
+}
+
+#returnBookButton{
+    -fx-background-color: #FF5722;
+    -fx-text-fill: #FFFFFF;
+}
+
+#LogOutButton {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,32 @@
+<changelist name="Changes" date="1732962961032" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" />
+  <option name="DESCRIPTION" value="Changes" />
+  <binary>
+    <option name="AFTER_PATH" value="src/main/resources/com/example/demo/Book cover.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/Book cover.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="src/main/java/com/example/demo.zip" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/demo.zip" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="src/main/java/com/example/demo (2).zip" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/demo (2).zip" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="src/main/resources/com/example/demo/Exit.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/Exit.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="src/main/resources/com/example/demo/free-user-icon-3296-thumb.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/free-user-icon-3296-thumb.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="src/free-user-icon-3296-thumb.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/free-user-icon-3296-thumb1.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value=".mvn/wrapper/maven-wrapper.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/maven-wrapper.jar" />
+  </binary>
+</changelist>

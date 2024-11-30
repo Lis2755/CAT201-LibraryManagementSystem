@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cathive.fonts.fontawesome" type="repository">
+    <properties maven-id="com.cathive.fonts:fonts-fontawesome:3.2.1.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/cathive/fonts/fonts-fontawesome/3.2.1.0/fonts-fontawesome-3.2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

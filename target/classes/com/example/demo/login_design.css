@@ -1,0 +1,19 @@
+#mainPane{
+    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #3B82F6);
+}
+
+#anchor{
+    -fx-background-color: white;
+}
+
+#loginButton{
+    -fx-background-color: #3B82F6;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+#loginButton:hover {
+    -fx-background-color: #2563EB;
+}

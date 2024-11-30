@@ -1,0 +1,1902 @@
+Index: src/main/resources/com/example/demo/login_design.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/login_design.css b/src/main/resources/com/example/demo/login_design.css
+new file mode 100644
+--- /dev/null	(date 1732771482317)
++++ b/src/main/resources/com/example/demo/login_design.css	(date 1732771482317)
+@@ -0,0 +1,19 @@
++#mainPane{
++    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #3B82F6);
++}
++
++#anchor{
++    -fx-background-color: white;
++}
++
++#loginButton{
++    -fx-background-color: #3B82F6;
++    -fx-text-fill: white;
++    -fx-border-radius: 5px;
++    -fx-background-radius: 5px;
++    -fx-cursor: hand;
++}
++
++#loginButton:hover {
++    -fx-background-color: #2563EB;
++}
+\ No newline at end of file
+Index: src/main/resources/com/example/demo/hello-view.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/hello-view.fxml b/src/main/resources/com/example/demo/hello-view.fxml
+new file mode 100644
+--- /dev/null	(date 1732707924027)
++++ b/src/main/resources/com/example/demo/hello-view.fxml	(date 1732707924027)
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.text.*?>
++
++<AnchorPane id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="691.0" stylesheets="@login_design.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
++   <children>
++      <AnchorPane id="anchor" layoutX="105.0" layoutY="105.0" prefHeight="270.0" prefWidth="465.0">
++         <children>
++            <Label layoutX="210.0" layoutY="106.0" text="Login">
++               <font>
++                  <Font name="Arial Black" size="25.0" />
++               </font>
++            </Label>
++            <TextField fx:id="nameField" layoutX="146.0" layoutY="154.0" prefHeight="25.0" prefWidth="203.0" promptText="Name:" />
++            <Button fx:id="loginButton" layoutX="214.0" layoutY="195.0" text="Login" onAction="#handleLogin" />
++            <ImageView fitHeight="95.0" fitWidth="147.0" layoutX="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
++               <image>
++                  <Image url="@free-user-icon-3296-thumb.png" />
++               </image>
++            </ImageView>
++         </children>
++      </AnchorPane>
++   </children>
++</AnchorPane>
+Index: .mvn/wrapper/maven-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/.mvn/wrapper/maven-wrapper.properties b/.mvn/wrapper/maven-wrapper.properties
+new file mode 100644
+--- /dev/null	(date 1732681160041)
++++ b/.mvn/wrapper/maven-wrapper.properties	(date 1732681160041)
+@@ -0,0 +1,2 @@
++distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.8.5/apache-maven-3.8.5-bin.zip
++wrapperUrl=https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(date 1732706972133)
++++ b/.idea/uiDesigner.xml	(date 1732706972133)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1732681176329)
++++ b/.idea/misc.xml	(date 1732681176329)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/resources/com/example/demo/Dashboard.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/Dashboard.fxml b/src/main/resources/com/example/demo/Dashboard.fxml
+new file mode 100644
+--- /dev/null	(date 1732959997386)
++++ b/src/main/resources/com/example/demo/Dashboard.fxml	(date 1732959997386)
+@@ -0,0 +1,93 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.control.*?>
++<?import javafx.scene.image.*?>
++<?import javafx.scene.layout.*?>
++<?import javafx.scene.shape.*?>
++<?import javafx.scene.text.*?>
++
++<AnchorPane fx:id="MainPane" prefHeight="540.0" prefWidth="1001.0" stylesheets="@Dashboard_design.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Dashboard">
++   <children>
++      <BorderPane layoutX="15.0" layoutY="60.0" prefHeight="324.0" prefWidth="570.0">
++         <top>
++            <AnchorPane fx:id="UserPane" prefHeight="422.0" prefWidth="653.0" BorderPane.alignment="CENTER">
++               <children>
++                  <ImageView fitHeight="93.0" fitWidth="129.0" layoutX="30.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
++                     <image>
++                        <Image url="@free-user-icon-3296-thumb.png" />
++                     </image>
++                  </ImageView>
++                  <Label layoutX="37.0" layoutY="100.0" prefHeight="18.0" prefWidth="64.0" text="Welcome,">
++                     <font>
++                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
++                     </font>
++                  </Label>
++                  <Label fx:id="usernameLabel" layoutX="36.0" layoutY="118.0" prefHeight="26.0" prefWidth="102.0" text="User name">
++                     <font>
++                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
++                     </font>
++                  </Label>
++                  <Button fx:id="viewAllBookButton" layoutX="21.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleViewAllBooks" prefHeight="26.0" prefWidth="110.0" text="View all Books" />
++                  <Button fx:id="addBookButton" layoutX="21.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleAddBook" prefHeight="26.0" prefWidth="110.0" text="Add Book" />
++                  <Button fx:id="returnBookButton" layoutX="21.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleViewBorrowedBooks" prefHeight="26.0" prefWidth="110.0" text="My Book" />
++                  <Line endX="89.5" layoutX="84.0" layoutY="154.0" startX="-83.00001525878906" startY="-1.52587890625E-5" stroke="#dfdbdb" />
++                  <AnchorPane layoutX="160.0" layoutY="8.0" prefHeight="414.0" prefWidth="488.0">
++                     <children>
++                        <AnchorPane fx:id="LogOut" layoutY="6.0" prefHeight="450.0" prefWidth="810.0">
++                           <children>
++                              <TableView fx:id="bookTableView" layoutX="214.0" layoutY="52.0" prefHeight="384.0" prefWidth="586.0">
++                                 <columns>
++                                    <TableColumn fx:id="bookTitleColumn" prefWidth="198.20001220703125" text="Book Title" />
++                                    <TableColumn fx:id="authorColumn" prefWidth="90.5999755859375" text="Author" />
++                                    <TableColumn fx:id="isbnColumn" minWidth="0.0" prefWidth="148.39996337890625" text="ISBN" />
++                                    <TableColumn fx:id="availabilityColumn" prefWidth="148.00002441406252" text="Availability" />
++                                 </columns>
++                              </TableView>
++                              <AnchorPane layoutX="14.0" layoutY="28.0" prefHeight="408.0" prefWidth="188.0">
++                                 <children>
++                                    <AnchorPane fx:id="Book" layoutX="11.0" layoutY="7.0" prefHeight="138.0" prefWidth="165.0">
++                                       <children>
++                                          <ImageView id="Book Cover" fitHeight="150.0" fitWidth="168.0" layoutX="-1.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
++                                             <image>
++                                                <Image url="@Book cover.png" />
++                                             </image>
++                                          </ImageView>
++                                          <Label fx:id="Booktitle" layoutX="43.0" layoutY="24.0" prefHeight="31.0" prefWidth="63.0" text="Book Title" textFill="#3417f2">
++                                             <font>
++                                                <Font name="High Tower Text Italic" size="14.0" />
++                                             </font>
++                                          </Label>
++                                          <Label fx:id="author" layoutX="45.0" layoutY="58.0" prefHeight="27.0" prefWidth="58.0" text="Author" textFill="#2a46d1">
++                                             <font>
++                                                <Font name="High Tower Text Italic" size="14.0" />
++                                             </font>
++                                          </Label>
++                                       </children></AnchorPane>
++                                    <TextField fx:id="bookTitle" layoutX="19.0" layoutY="169.0" text="Book Title" />
++                                    <TextField fx:id="Author" layoutX="19.0" layoutY="204.0" text="Author" />
++                                    <TextField fx:id="ISBN" layoutX="19.0" layoutY="245.0" text="ISBN" />
++                                    <Button fx:id="availability" layoutX="40.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleBorrow" prefHeight="28.0" prefWidth="93.0" text="Borrow" />
++                                 </children>
++                              </AnchorPane>
++                              <Line endX="-90.0" endY="-191.39999389648438" layoutX="104.0" layoutY="176.0" startX="-90.0" startY="278.4000244140625" stroke="#c7c1c1" />
++                              <TextField fx:id="searchField" layoutX="250.0" layoutY="13.0" prefHeight="28.0" prefWidth="261.0" promptText="Search here..." />
++                              <ComboBox fx:id="categoryComboBox" layoutX="512.0" layoutY="13.0" prefHeight="28.0" prefWidth="142.0" />
++                           </children>
++                        </AnchorPane>
++                     </children></AnchorPane>
++                  <Button fx:id="LogOutButton" layoutX="21.0" layoutY="314.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="112.0" text="Log Out" />
++               </children>
++            </AnchorPane>
++         </top>
++         <center>
++            <!-- Define width and height for ListView -->
++            <ListView fx:id="bookListView" layoutX="180.0" layoutY="60.0" prefHeight="200.0" prefWidth="350.0" />
++         </center>
++      </BorderPane>
++      <Label layoutX="383.0" layoutY="14.0" text="Library Management System" textFill="WHITE">
++         <font>
++            <Font name="Segoe UI Black" size="19.0" />
++         </font>
++      </Label>
++   </children>
++</AnchorPane>
+Index: src/main/resources/com/example/demo/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/.idea/modules.xml b/src/main/resources/com/example/demo/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1732807834859)
++++ b/src/main/resources/com/example/demo/.idea/modules.xml	(date 1732807834859)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/demo.iml" filepath="$PROJECT_DIR$/.idea/demo.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/resources/com/example/demo/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/.idea/misc.xml b/src/main/resources/com/example/demo/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1732807834878)
++++ b/src/main/resources/com/example/demo/.idea/misc.xml	(date 1732807834878)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1732681176341)
++++ b/.idea/encodings.xml	(date 1732681176341)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/main/java/com/example/demo/Dashboard.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/Dashboard.java b/src/main/java/com/example/demo/Dashboard.java
+new file mode 100644
+--- /dev/null	(date 1732959848614)
++++ b/src/main/java/com/example/demo/Dashboard.java	(date 1732959848614)
+@@ -0,0 +1,358 @@
++package com.example.demo;
++
++import javafx.beans.property.SimpleStringProperty;
++import javafx.collections.FXCollections;
++import javafx.collections.ObservableList;
++import javafx.collections.transformation.FilteredList;
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Node;
++import javafx.scene.Scene;
++import javafx.scene.control.*;
++import javafx.scene.control.cell.PropertyValueFactory;
++import javafx.scene.input.MouseEvent;
++import javafx.scene.layout.AnchorPane;
++import javafx.scene.layout.GridPane;
++import javafx.stage.Stage;
++
++import java.io.*;
++import java.util.ArrayList;
++import java.util.Optional;
++
++public class Dashboard {
++
++    @FXML
++    private TableView<Book> bookTableView;  // TableView to display books
++
++    private String username; // Add this line
++
++    @FXML
++    private TableColumn<Book, String> bookTitleColumn;
++    @FXML
++    private TableColumn<Book, String> authorColumn;
++    @FXML
++    private TableColumn<Book, String> isbnColumn;
++    @FXML
++    private TableColumn<Book, String> availabilityColumn;
++    private Library library;
++
++    @FXML
++    private Button viewAllBookButton;
++
++    @FXML
++    private Button returnBookButton;
++
++    @FXML
++    private Button addBookButton;
++
++    @FXML
++    private Label usernameLabel; // For displaying the username
++
++    @FXML
++    private TextField bookTitle;
++    @FXML
++    private TextField Author;
++    @FXML
++    private TextField ISBN;
++    @FXML
++    private Button availability;
++
++    @FXML
++    private Label Booktitle;
++
++    @FXML
++    private Label author;
++
++    @FXML
++    private ComboBox categoryComboBox;
++
++    @FXML
++    private TextField searchField;
++
++    @FXML
++    private Button LogOutButton;
++
++
++    @FXML
++    private ObservableList<Book> borrowedBooks = FXCollections.observableArrayList();
++
++    // This method will be called when the scene is initialized
++    @FXML
++    public void initialize() {
++        bookTitle.setEditable(false);
++        Author.setEditable(false);
++        ISBN.setEditable(false);
++        // Add items to the ComboBox
++        categoryComboBox.getItems().addAll("All", "Book title", "Author", "ISBN");
++
++        // Set default value
++        categoryComboBox.setValue("All");
++
++        library = new Library();
++        library.readFile("src/main/java/com/example/demo/Library_Books.csv");
++        handleViewAllBooks(); // Initial load of all books
++
++        // Set up the event listener for row selection
++        bookTableView.setOnMouseClicked(this::handleRowClick);
++    }
++
++    // Method to set the username dynamically from the login screen
++    public void setUsername(String username) {
++        this.username = username;
++        usernameLabel.setText(username + "!");
++
++        ArrayList<Book> books = library.searchByBorrowerName(username);
++        borrowedBooks.addAll(books);
++    }
++
++    // View all books button action
++    @FXML
++    private void handleViewAllBooks() {
++        ArrayList<Book> books = library.books; // Get all books from the library
++
++        if (books.isEmpty()) {
++            displayMessage("View All Books", "No books found.");
++        } else {
++            ObservableList<Book> bookItems = FXCollections.observableArrayList();
++            // Add each book object to the list
++            bookItems.addAll(books);
++
++            // Set custom cell value factories for each column
++            bookTitleColumn.setCellValueFactory(cellData ->
++                    new SimpleStringProperty(cellData.getValue().getTitle())
++            );
++            authorColumn.setCellValueFactory(cellData ->
++                    new SimpleStringProperty(cellData.getValue().getAuthor())
++            );
++            isbnColumn.setCellValueFactory(cellData ->
++                    new SimpleStringProperty(cellData.getValue().getISBN())
++            );
++            availabilityColumn.setCellValueFactory(cellData ->
++                    new SimpleStringProperty(cellData.getValue().isAvailable() ? "Available" : "Not Available")
++            );
++
++            // Set the items for TableView
++            bookTableView.setItems(bookItems);
++
++            FilteredList<Book> filteredList = new FilteredList<>(bookItems, b -> true);
++
++            searchField.textProperty().addListener((observable, oldValue, newValue) -> {
++                filteredList.setPredicate(book -> {
++                    // If no search value, display all books
++                    if (newValue == null || newValue.isEmpty()) {
++                        return true;
++                    }
++
++                    String searchKeyword = newValue.toLowerCase();
++
++                    // Match the search with book title, author, or ISBN based on ComboBox
++                    String category = categoryComboBox.getValue().toString();
++                    switch (category) {
++                        case "Book title":
++                            return book.getTitle().toLowerCase().contains(searchKeyword);
++                        case "Author":
++                            return book.getAuthor().toLowerCase().contains(searchKeyword);
++                        case "ISBN":
++                            return book.getISBN().toLowerCase().contains(searchKeyword);
++                        default:
++                            // For "All", search across all fields
++                            return book.getTitle().toLowerCase().contains(searchKeyword) ||
++                                    book.getAuthor().toLowerCase().contains(searchKeyword) ||
++                                    book.getISBN().toLowerCase().contains(searchKeyword);
++                    }
++                });
++            });
++
++            bookTableView.setItems(filteredList);
++        }
++    }
++
++
++    @FXML
++    private void handleAddBook() {
++        // Create a dialog
++        Dialog<ButtonType> dialog = new Dialog<>();
++        dialog.setTitle("Add New Book");
++
++        // Create the input form using a GridPane
++        GridPane gridPane = new GridPane();
++        gridPane.setHgap(10);
++        gridPane.setVgap(10);
++
++        TextField titleField = new TextField();
++        TextField authorField = new TextField();
++        TextField isbnField = new TextField();
++
++        gridPane.add(new Label("Book Title:"), 0, 0);
++        gridPane.add(titleField, 1, 0);
++        gridPane.add(new Label("Author:"), 0, 1);
++        gridPane.add(authorField, 1, 1);
++        gridPane.add(new Label("ISBN:"), 0, 2);
++        gridPane.add(isbnField, 1, 2);
++
++        dialog.getDialogPane().setContent(gridPane);
++        dialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
++
++        // Show the dialog and wait for the user's response
++        dialog.showAndWait().ifPresent(response -> {
++            if (response == ButtonType.OK) {
++                // Get user input and add the book
++                String title = titleField.getText().trim();
++                String author = authorField.getText().trim();
++                String isbn = isbnField.getText().trim();
++
++                if (!title.isEmpty() && !author.isEmpty() && !isbn.isEmpty()) {
++                    Book newBook = new Book(title, author, isbn, true, "");
++                    library.add(newBook, "src/main/java/com/example/demo/Library_Books.csv");
++                    refreshTableView(); // Refresh TableView to include the new book
++                    displayMessage("Add Book", "Book added successfully:\n" + newBook.toString());
++                } else {
++                    displayMessage("Add Book", "All fields are required to add a new book.");
++                }
++            }
++        });
++    }
++
++
++    private void handleRowClick(MouseEvent event) {
++        Book selectedBook = bookTableView.getSelectionModel().getSelectedItem();
++        if (selectedBook != null) {
++            updateBookDetails(selectedBook);
++        }
++    }
++
++    private void updateBookDetails(Book book) {
++        bookTitle.setText(book.getTitle());
++        Author.setText(book.getAuthor());
++        ISBN.setText(book.getISBN());
++        Booktitle.setText(book.getTitle());
++        author.setText(book.getAuthor());
++
++        availability.setDisable(false); // Reset disable state
++
++        if (borrowedBooks.contains(book)) {
++            availability.setText("Return");
++            availability.setStyle("-fx-background-color: red; -fx-text-fill: white;");
++        } else if (book.isAvailable()) {
++            availability.setText("Borrow");
++            availability.setStyle("-fx-background-color: green; -fx-text-fill: white;");
++        } else {
++            availability.setText("Not Available");
++            availability.setStyle("-fx-background-color: gray; -fx-text-fill: white;");
++            availability.setDisable(true); // Disable for unavailable books
++        }
++    }
++
++    private void saveBooksToFile() {
++        File file = new File("src/main/java/com/example/demo/Library_Books.csv");
++        try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
++            writer.write("Book Title,Author,ISBN,Availability,Borrower Name");
++            writer.newLine();
++            for (Book book : library.books) {
++                writer.write(String.join(",", book.getTitle(), book.getAuthor(), book.getISBN(),
++                        book.isAvailable() ? "True" : "False",
++                        book.getBorrowerName() != null ? book.getBorrowerName() : ""));
++                writer.newLine();
++            }
++        } catch (IOException e) {
++            displayMessage("Error", "Failed to save books to file.");
++            e.printStackTrace();
++        }
++    }
++
++    // Event handler for Borrow button click
++    @FXML
++    private void handleBorrow(ActionEvent event) {
++        Book selectedBook = bookTableView.getSelectionModel().getSelectedItem();
++        if (selectedBook != null) {
++            if (borrowedBooks.contains(selectedBook)) {
++                // Returning the book
++                selectedBook.setAvailability(true);
++                selectedBook.setBorrowerName(""); // Clear borrower name when returning
++                borrowedBooks.remove(selectedBook); // Remove from borrowed list
++                updateBookDetails(selectedBook); // Update the UI based on changes
++                saveBooksToFile(); // Save updated availability to the file
++                displayMessage("Return Book", "The book \"" + selectedBook.getTitle() + "\" has been returned successfully.");
++            } else if (selectedBook.isAvailable()) {
++                // Borrowing the book
++                selectedBook.setAvailability(false);
++                selectedBook.setBorrowerName(username); // Ensure that the correct borrower name is set
++                borrowedBooks.add(selectedBook); // Add to borrowed list
++                updateBookDetails(selectedBook); // Update UI based on changes
++                saveBooksToFile(); // Save updated availability to the file
++                refreshTableView(); // Update the table view
++                displayMessage("Borrow Book", "The book \"" + selectedBook.getTitle() + "\" has been borrowed successfully.");
++            } else {
++                displayMessage("Borrow Book", "This book is currently not available.");
++            }
++        } else {
++            displayMessage("Borrow Book", "Please select a book to borrow or return.");
++        }
++    }
++
++    @FXML
++    private void handleViewBorrowedBooks(ActionEvent event) {
++        if (bookTableView.getItems().equals(library.books)) {
++            // Show borrowed books
++            bookTableView.setItems(borrowedBooks);
++            returnBookButton.setText("My book");
++        } else {
++            // Show all books
++            ObservableList<Book> allBooks = FXCollections.observableArrayList(library.books);
++            bookTableView.setItems(allBooks);
++            returnBookButton.setText("My book");
++        }
++    }
++
++    // Utility method to display messages in an alert box
++    private void displayMessage(String title, String content) {
++        Alert alert = new Alert(Alert.AlertType.INFORMATION);
++        alert.setTitle(title);
++        alert.setHeaderText(null);
++        alert.setContentText(content);
++        alert.showAndWait();
++    }
++
++    private void refreshTableView() {
++        ObservableList<Book> bookItems = FXCollections.observableArrayList(library.books);
++        bookTableView.setItems(bookItems);
++        bookTableView.refresh();
++    }
++
++    @FXML
++    private Button logoutButton;
++    @FXML
++    private AnchorPane MainPane;
++
++    Stage stage;
++
++    public void logout(ActionEvent event) {
++        // Show confirmation alert
++        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
++        alert.setTitle("Logout");
++        alert.setHeaderText(null);
++        alert.setContentText("Are you sure you want to logout?");
++
++        // Wait for the user's response
++        Optional<ButtonType> result = alert.showAndWait();
++        if (result.isPresent() && result.get() == ButtonType.OK) {
++            // Get the current stage
++            stage = (Stage) MainPane.getScene().getWindow();
++
++            // Load to log in scene
++            try {
++                FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
++                Scene scene = new Scene(loader.load());
++
++                // Switch to log out scene
++                stage.setScene(scene);
++                stage.show();
++            } catch (IOException e) {
++                e.printStackTrace(); // Handle potential exceptions (e.g., if the FXML file doesn't exist)
++            }
++        }
++    }
++
++}
++
+Index: src/main/java/com/example/demo/Book.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/Book.java b/src/main/java/com/example/demo/Book.java
+new file mode 100644
+--- /dev/null	(date 1732712496844)
++++ b/src/main/java/com/example/demo/Book.java	(date 1732712496844)
+@@ -0,0 +1,67 @@
++package com.example.demo;
++
++
++public class Book {
++    private String title;
++    private String author;
++    private String isbn;
++    private boolean availability;
++    private String borrowerName;
++
++    // Constructor
++    public Book(String title, String author, String isbn, boolean availability, String borrowerName) {
++        this.title = title;
++        this.author = author;
++        this.isbn = isbn;
++        this.availability = availability;
++        this.borrowerName = borrowerName;
++    }
++
++    // Getters and Setters
++    public String getTitle() {
++        return title;
++    }
++
++    public void setTitle(String title) {
++        this.title = title;
++    }
++
++    public String getAuthor() {
++        return author;
++    }
++
++    public void setAuthor(String author) {
++        this.author = author;
++    }
++
++    public String getISBN() {
++        return isbn;
++    }
++
++    public void setISBN(String isbn) {
++        this.isbn = isbn;
++    }
++
++    public boolean isAvailable() {
++        return availability;
++    }
++
++    public void setAvailability(boolean availability) {
++        this.availability = availability;
++    }
++
++    public String getBorrowerName() {
++        return borrowerName;
++    }
++
++    public void setBorrowerName(String borrowerName) {
++        this.borrowerName = borrowerName;
++    }
++
++    // To display book details
++    @Override
++    public String toString() {
++        return title + "," + author + "," + isbn + "," +  availability + "," + borrowerName;
++    }
++}
++
+Index: src/main/resources/com/example/demo/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/.idea/.gitignore b/src/main/resources/com/example/demo/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732807835026)
++++ b/src/main/resources/com/example/demo/.idea/.gitignore	(date 1732807835026)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: src/main/java/com/example/demo/Library.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/Library.java b/src/main/java/com/example/demo/Library.java
+new file mode 100644
+--- /dev/null	(date 1732949280771)
++++ b/src/main/java/com/example/demo/Library.java	(date 1732949280771)
+@@ -0,0 +1,112 @@
++package com.example.demo;
++
++import java.io.*;
++import java.util.ArrayList;
++import java.util.List;
++
++public class Library {
++
++    // Create array list of Book objects
++    ArrayList<Book> books = new ArrayList<Book>();
++
++    // Method to add books
++    public void add(Book book, String fileName) {
++        books.add(book);
++        // Call appendFile method to append the book into the file
++        appendFile(fileName, book);
++    }
++
++    // Method to read file and load books into the ArrayList
++    public void readFile(String fileName) {
++        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
++            String line;
++
++            //Skip the header
++            reader.readLine();
++
++            // Loop to read the file line by line
++            while ((line = reader.readLine()) != null) {
++                // split the comma to get the attribute
++                String[] row = line.split(",");
++
++                // Check if the row contains all necessary data
++                String title = row[0];
++                String author = row[1];
++                String ISBN = row[2];
++                String borrowerName = "";
++                boolean available = Boolean.parseBoolean(row[3]); //To convert the String into boolean
++                if (row.length == 5) {
++                    borrowerName = row[4];
++                }
++                // Create a book object and add it to the ArrayList
++                Book book = new Book(title, author, ISBN, available, borrowerName);
++                books.add(book);
++            }
++        } catch (FileNotFoundException e) { //Exception if the file doesn't exist
++            System.out.println("File not found");
++        } catch (IOException e) { //Exception if cannot read from file
++            System.out.println("Error reading from file");
++        }
++    }
++
++    // Method to append a new book to the file
++    public void appendFile(String fileName, Book book) {
++        try (FileWriter writer = new FileWriter(fileName, true)) {  // write into the file
++            // Append the book details as a string
++            writer.append(book.toString()).append("\n");
++            System.out.println("The book has been successfully added to the file");
++        } catch (IOException e) { //Exception if cannot write into file
++            System.out.println("Cannot write into file");
++        }
++    }
++
++    // Method to search book by title
++    public ArrayList<Book> searchByTitle(String title) {
++        ArrayList<Book> result = new ArrayList<>();
++        for (int i = 0; i < books.size(); i++) {
++            Book book = books.get(i);
++            // Use IgnoreCase to ignore case sensitive issues
++            if (book.getTitle().equalsIgnoreCase(title)) {
++                result.add(book);
++            }
++        }
++        return result;
++    }
++
++    // Method to search book by Author
++    public ArrayList<Book> searchByAuthor(String author) {
++        ArrayList<Book> result = new ArrayList<>();
++        for (int i = 0; i < books.size(); i++) {
++            Book book = books.get(i);
++            if (book.getAuthor().equalsIgnoreCase(author)) {
++                result.add(book);
++            }
++        }
++        return result;
++    }
++
++    // Method to search book by ISBN
++    public ArrayList<Book> searchByISBN(String ISBN) {
++        ArrayList<Book> result = new ArrayList<>();
++        for (int i = 0; i < books.size(); i++) {
++            Book book = books.get(i);
++            if (book.getISBN().equalsIgnoreCase(ISBN)) {
++                result.add(book);
++            }
++        }
++        return result;
++    }
++
++    // Method to search the borrowerName
++    public ArrayList<Book> searchByBorrowerName(String borrowerName) {
++        ArrayList<Book> result = new ArrayList<>();
++        for (int i = 0; i < books.size(); i++) {
++            Book book = books.get(i);
++            if (book.getBorrowerName().equalsIgnoreCase(borrowerName)) {
++                result.add(book);
++
++            }
++        }
++        return result;
++    }
++}
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732681176494)
++++ b/.idea/.gitignore	(date 1732681176494)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1732962873153)
++++ b/.idea/vcs.xml	(date 1732962873153)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(date 1732681168004)
++++ b/pom.xml	(date 1732681168004)
+@@ -0,0 +1,76 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>com.example</groupId>
++    <artifactId>demo</artifactId>
++    <version>1.0-SNAPSHOT</version>
++    <name>demo</name>
++
++    <properties>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++        <junit.version>5.10.2</junit.version>
++    </properties>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.openjfx</groupId>
++            <artifactId>javafx-controls</artifactId>
++            <version>17.0.6</version>
++        </dependency>
++        <dependency>
++            <groupId>org.openjfx</groupId>
++            <artifactId>javafx-fxml</artifactId>
++            <version>17.0.6</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-api</artifactId>
++            <version>${junit.version}</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.junit.jupiter</groupId>
++            <artifactId>junit-jupiter-engine</artifactId>
++            <version>${junit.version}</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.13.0</version>
++                <configuration>
++                    <source>23</source>
++                    <target>23</target>
++                </configuration>
++            </plugin>
++            <plugin>
++                <groupId>org.openjfx</groupId>
++                <artifactId>javafx-maven-plugin</artifactId>
++                <version>0.0.8</version>
++                <executions>
++                    <execution>
++                        <!-- Default configuration for running with: mvn clean javafx:run -->
++                        <id>default-cli</id>
++                        <configuration>
++                            <mainClass>com.example.demo/com.example.demo.HelloApplication</mainClass>
++                            <launcher>app</launcher>
++                            <jlinkZipName>app</jlinkZipName>
++                            <jlinkImageName>app</jlinkImageName>
++                            <noManPages>true</noManPages>
++                            <stripDebug>true</stripDebug>
++                            <noHeaderFiles>true</noHeaderFiles>
++                        </configuration>
++                    </execution>
++                </executions>
++            </plugin>
++        </plugins>
++    </build>
++</project>
+\ No newline at end of file
+Index: src/main/resources/com/example/demo/Dashboard_design.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/demo/Dashboard_design.css b/src/main/resources/com/example/demo/Dashboard_design.css
+new file mode 100644
+--- /dev/null	(date 1732956901641)
++++ b/src/main/resources/com/example/demo/Dashboard_design.css	(date 1732956901641)
+@@ -0,0 +1,28 @@
++#MainPane{
++    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #3B82F6);
++}
++
++#UserPane{
++    -fx-background-color: white;
++}
++
++#viewAllBookButton{
++    -fx-background-color: #03A9F4;
++    -fx-text-fill: #FFFFFF;
++}
++
++#addBookButton{
++    -fx-background-color: #009688;
++    -fx-text-fill: #FFFFFF;
++}
++
++#returnBookButton{
++    -fx-background-color: #FF5722;
++    -fx-text-fill: #FFFFFF;
++}
++
++#LogOutButton {
++    -fx-background-color: red;
++    -fx-text-fill: white;
++    -fx-font-weight: bold;
++}
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732681160050)
++++ b/.gitignore	(date 1732681160050)
+@@ -0,0 +1,38 @@
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### IntelliJ IDEA ###
++.idea/modules.xml
++.idea/jarRepositories.xml
++.idea/compiler.xml
++.idea/libraries/
++*.iws
++*.iml
++*.ipr
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: mvnw.cmd
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mvnw.cmd b/mvnw.cmd
+new file mode 100644
+--- /dev/null	(date 1732681160048)
++++ b/mvnw.cmd	(date 1732681160048)
+@@ -0,0 +1,188 @@
++@REM ----------------------------------------------------------------------------
++@REM Licensed to the Apache Software Foundation (ASF) under one
++@REM or more contributor license agreements.  See the NOTICE file
++@REM distributed with this work for additional information
++@REM regarding copyright ownership.  The ASF licenses this file
++@REM to you under the Apache License, Version 2.0 (the
++@REM "License"); you may not use this file except in compliance
++@REM with the License.  You may obtain a copy of the License at
++@REM
++@REM    https://www.apache.org/licenses/LICENSE-2.0
++@REM
++@REM Unless required by applicable law or agreed to in writing,
++@REM software distributed under the License is distributed on an
++@REM "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++@REM KIND, either express or implied.  See the License for the
++@REM specific language governing permissions and limitations
++@REM under the License.
++@REM ----------------------------------------------------------------------------
++
++@REM ----------------------------------------------------------------------------
++@REM Maven Start Up Batch script
++@REM
++@REM Required ENV vars:
++@REM JAVA_HOME - location of a JDK home dir
++@REM
++@REM Optional ENV vars
++@REM M2_HOME - location of maven2's installed home dir
++@REM MAVEN_BATCH_ECHO - set to 'on' to enable the echoing of the batch commands
++@REM MAVEN_BATCH_PAUSE - set to 'on' to wait for a keystroke before ending
++@REM MAVEN_OPTS - parameters passed to the Java VM when running Maven
++@REM     e.g. to debug Maven itself, use
++@REM set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
++@REM MAVEN_SKIP_RC - flag to disable loading of mavenrc files
++@REM ----------------------------------------------------------------------------
++
++@REM Begin all REM lines with '@' in case MAVEN_BATCH_ECHO is 'on'
++@echo off
++@REM set title of command window
++title %0
++@REM enable echoing by setting MAVEN_BATCH_ECHO to 'on'
++@if "%MAVEN_BATCH_ECHO%" == "on"  echo %MAVEN_BATCH_ECHO%
++
++@REM set %HOME% to equivalent of $HOME
++if "%HOME%" == "" (set "HOME=%HOMEDRIVE%%HOMEPATH%")
++
++@REM Execute a user defined script before this one
++if not "%MAVEN_SKIP_RC%" == "" goto skipRcPre
++@REM check for pre script, once with legacy .bat ending and once with .cmd ending
++if exist "%USERPROFILE%\mavenrc_pre.bat" call "%USERPROFILE%\mavenrc_pre.bat" %*
++if exist "%USERPROFILE%\mavenrc_pre.cmd" call "%USERPROFILE%\mavenrc_pre.cmd" %*
++:skipRcPre
++
++@setlocal
++
++set ERROR_CODE=0
++
++@REM To isolate internal variables from possible post scripts, we use another setlocal
++@setlocal
++
++@REM ==== START VALIDATION ====
++if not "%JAVA_HOME%" == "" goto OkJHome
++
++echo.
++echo Error: JAVA_HOME not found in your environment. >&2
++echo Please set the JAVA_HOME variable in your environment to match the >&2
++echo location of your Java installation. >&2
++echo.
++goto error
++
++:OkJHome
++if exist "%JAVA_HOME%\bin\java.exe" goto init
++
++echo.
++echo Error: JAVA_HOME is set to an invalid directory. >&2
++echo JAVA_HOME = "%JAVA_HOME%" >&2
++echo Please set the JAVA_HOME variable in your environment to match the >&2
++echo location of your Java installation. >&2
++echo.
++goto error
++
++@REM ==== END VALIDATION ====
++
++:init
++
++@REM Find the project base dir, i.e. the directory that contains the folder ".mvn".
++@REM Fallback to current working directory if not found.
++
++set MAVEN_PROJECTBASEDIR=%MAVEN_BASEDIR%
++IF NOT "%MAVEN_PROJECTBASEDIR%"=="" goto endDetectBaseDir
++
++set EXEC_DIR=%CD%
++set WDIR=%EXEC_DIR%
++:findBaseDir
++IF EXIST "%WDIR%"\.mvn goto baseDirFound
++cd ..
++IF "%WDIR%"=="%CD%" goto baseDirNotFound
++set WDIR=%CD%
++goto findBaseDir
++
++:baseDirFound
++set MAVEN_PROJECTBASEDIR=%WDIR%
++cd "%EXEC_DIR%"
++goto endDetectBaseDir
++
++:baseDirNotFound
++set MAVEN_PROJECTBASEDIR=%EXEC_DIR%
++cd "%EXEC_DIR%"
++
++:endDetectBaseDir
++
++IF NOT EXIST "%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config" goto endReadAdditionalConfig
++
++@setlocal EnableExtensions EnableDelayedExpansion
++for /F "usebackq delims=" %%a in ("%MAVEN_PROJECTBASEDIR%\.mvn\jvm.config") do set JVM_CONFIG_MAVEN_PROPS=!JVM_CONFIG_MAVEN_PROPS! %%a
++@endlocal & set JVM_CONFIG_MAVEN_PROPS=%JVM_CONFIG_MAVEN_PROPS%
++
++:endReadAdditionalConfig
++
++SET MAVEN_JAVA_EXE="%JAVA_HOME%\bin\java.exe"
++set WRAPPER_JAR="%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.jar"
++set WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
++
++set DOWNLOAD_URL="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
++
++FOR /F "usebackq tokens=1,2 delims==" %%A IN ("%MAVEN_PROJECTBASEDIR%\.mvn\wrapper\maven-wrapper.properties") DO (
++    IF "%%A"=="wrapperUrl" SET DOWNLOAD_URL=%%B
++)
++
++@REM Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
++@REM This allows using the maven wrapper in projects that prohibit checking in binary data.
++if exist %WRAPPER_JAR% (
++    if "%MVNW_VERBOSE%" == "true" (
++        echo Found %WRAPPER_JAR%
++    )
++) else (
++    if not "%MVNW_REPOURL%" == "" (
++        SET DOWNLOAD_URL="%MVNW_REPOURL%/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
++    )
++    if "%MVNW_VERBOSE%" == "true" (
++        echo Couldn't find %WRAPPER_JAR%, downloading it ...
++        echo Downloading from: %DOWNLOAD_URL%
++    )
++
++    powershell -Command "&{"^
++		"$webclient = new-object System.Net.WebClient;"^
++		"if (-not ([string]::IsNullOrEmpty('%MVNW_USERNAME%') -and [string]::IsNullOrEmpty('%MVNW_PASSWORD%'))) {"^
++		"$webclient.Credentials = new-object System.Net.NetworkCredential('%MVNW_USERNAME%', '%MVNW_PASSWORD%');"^
++		"}"^
++		"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $webclient.DownloadFile('%DOWNLOAD_URL%', '%WRAPPER_JAR%')"^
++		"}"
++    if "%MVNW_VERBOSE%" == "true" (
++        echo Finished downloading %WRAPPER_JAR%
++    )
++)
++@REM End of extension
++
++@REM Provide a "standardized" way to retrieve the CLI args that will
++@REM work with both Windows and non-Windows executions.
++set MAVEN_CMD_LINE_ARGS=%*
++
++%MAVEN_JAVA_EXE% ^
++  %JVM_CONFIG_MAVEN_PROPS% ^
++  %MAVEN_OPTS% ^
++  %MAVEN_DEBUG_OPTS% ^
++  -classpath %WRAPPER_JAR% ^
++  "-Dmaven.multiModuleProjectDirectory=%MAVEN_PROJECTBASEDIR%" ^
++  %WRAPPER_LAUNCHER% %MAVEN_CONFIG% %*
++if ERRORLEVEL 1 goto error
++goto end
++
++:error
++set ERROR_CODE=1
++
++:end
++@endlocal & set ERROR_CODE=%ERROR_CODE%
++
++if not "%MAVEN_SKIP_RC%"=="" goto skipRcPost
++@REM check for post script, once with legacy .bat ending and once with .cmd ending
++if exist "%USERPROFILE%\mavenrc_post.bat" call "%USERPROFILE%\mavenrc_post.bat"
++if exist "%USERPROFILE%\mavenrc_post.cmd" call "%USERPROFILE%\mavenrc_post.cmd"
++:skipRcPost
++
++@REM pause the script if MAVEN_BATCH_PAUSE is set to 'on'
++if "%MAVEN_BATCH_PAUSE%"=="on" pause
++
++if "%MAVEN_TERMINATE_CMD%"=="on" exit %ERROR_CODE%
++
++cmd /C exit /B %ERROR_CODE%
+Index: mvnw
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mvnw b/mvnw
+new file mode 100644
+--- /dev/null	(date 1732681160047)
++++ b/mvnw	(date 1732681160047)
+@@ -0,0 +1,316 @@
++#!/bin/sh
++# ----------------------------------------------------------------------------
++# Licensed to the Apache Software Foundation (ASF) under one
++# or more contributor license agreements.  See the NOTICE file
++# distributed with this work for additional information
++# regarding copyright ownership.  The ASF licenses this file
++# to you under the Apache License, Version 2.0 (the
++# "License"); you may not use this file except in compliance
++# with the License.  You may obtain a copy of the License at
++#
++#    https://www.apache.org/licenses/LICENSE-2.0
++#
++# Unless required by applicable law or agreed to in writing,
++# software distributed under the License is distributed on an
++# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++# KIND, either express or implied.  See the License for the
++# specific language governing permissions and limitations
++# under the License.
++# ----------------------------------------------------------------------------
++
++# ----------------------------------------------------------------------------
++# Maven Start Up Batch script
++#
++# Required ENV vars:
++# ------------------
++#   JAVA_HOME - location of a JDK home dir
++#
++# Optional ENV vars
++# -----------------
++#   M2_HOME - location of maven2's installed home dir
++#   MAVEN_OPTS - parameters passed to the Java VM when running Maven
++#     e.g. to debug Maven itself, use
++#       set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
++#   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
++# ----------------------------------------------------------------------------
++
++if [ -z "$MAVEN_SKIP_RC" ] ; then
++
++  if [ -f /usr/local/etc/mavenrc ] ; then
++    . /usr/local/etc/mavenrc
++  fi
++
++  if [ -f /etc/mavenrc ] ; then
++    . /etc/mavenrc
++  fi
++
++  if [ -f "$HOME/.mavenrc" ] ; then
++    . "$HOME/.mavenrc"
++  fi
++
++fi
++
++# OS specific support.  $var _must_ be set to either true or false.
++cygwin=false;
++darwin=false;
++mingw=false
++case "`uname`" in
++  CYGWIN*) cygwin=true ;;
++  MINGW*) mingw=true;;
++  Darwin*) darwin=true
++    # Use /usr/libexec/java_home if available, otherwise fall back to /Library/Java/Home
++    # See https://developer.apple.com/library/mac/qa/qa1170/_index.html
++    if [ -z "$JAVA_HOME" ]; then
++      if [ -x "/usr/libexec/java_home" ]; then
++        export JAVA_HOME="`/usr/libexec/java_home`"
++      else
++        export JAVA_HOME="/Library/Java/Home"
++      fi
++    fi
++    ;;
++esac
++
++if [ -z "$JAVA_HOME" ] ; then
++  if [ -r /etc/gentoo-release ] ; then
++    JAVA_HOME=`java-config --jre-home`
++  fi
++fi
++
++if [ -z "$M2_HOME" ] ; then
++  ## resolve links - $0 may be a link to maven's home
++  PRG="$0"
++
++  # need this for relative symlinks
++  while [ -h "$PRG" ] ; do
++    ls=`ls -ld "$PRG"`
++    link=`expr "$ls" : '.*-> \(.*\)$'`
++    if expr "$link" : '/.*' > /dev/null; then
++      PRG="$link"
++    else
++      PRG="`dirname "$PRG"`/$link"
++    fi
++  done
++
++  saveddir=`pwd`
++
++  M2_HOME=`dirname "$PRG"`/..
++
++  # make it fully qualified
++  M2_HOME=`cd "$M2_HOME" && pwd`
++
++  cd "$saveddir"
++  # echo Using m2 at $M2_HOME
++fi
++
++# For Cygwin, ensure paths are in UNIX format before anything is touched
++if $cygwin ; then
++  [ -n "$M2_HOME" ] &&
++    M2_HOME=`cygpath --unix "$M2_HOME"`
++  [ -n "$JAVA_HOME" ] &&
++    JAVA_HOME=`cygpath --unix "$JAVA_HOME"`
++  [ -n "$CLASSPATH" ] &&
++    CLASSPATH=`cygpath --path --unix "$CLASSPATH"`
++fi
++
++# For Mingw, ensure paths are in UNIX format before anything is touched
++if $mingw ; then
++  [ -n "$M2_HOME" ] &&
++    M2_HOME="`(cd "$M2_HOME"; pwd)`"
++  [ -n "$JAVA_HOME" ] &&
++    JAVA_HOME="`(cd "$JAVA_HOME"; pwd)`"
++fi
++
++if [ -z "$JAVA_HOME" ]; then
++  javaExecutable="`which javac`"
++  if [ -n "$javaExecutable" ] && ! [ "`expr \"$javaExecutable\" : '\([^ ]*\)'`" = "no" ]; then
++    # readlink(1) is not available as standard on Solaris 10.
++    readLink=`which readlink`
++    if [ ! `expr "$readLink" : '\([^ ]*\)'` = "no" ]; then
++      if $darwin ; then
++        javaHome="`dirname \"$javaExecutable\"`"
++        javaExecutable="`cd \"$javaHome\" && pwd -P`/javac"
++      else
++        javaExecutable="`readlink -f \"$javaExecutable\"`"
++      fi
++      javaHome="`dirname \"$javaExecutable\"`"
++      javaHome=`expr "$javaHome" : '\(.*\)/bin'`
++      JAVA_HOME="$javaHome"
++      export JAVA_HOME
++    fi
++  fi
++fi
++
++if [ -z "$JAVACMD" ] ; then
++  if [ -n "$JAVA_HOME"  ] ; then
++    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
++      # IBM's JDK on AIX uses strange locations for the executables
++      JAVACMD="$JAVA_HOME/jre/sh/java"
++    else
++      JAVACMD="$JAVA_HOME/bin/java"
++    fi
++  else
++    JAVACMD="`\\unset -f command; \\command -v java`"
++  fi
++fi
++
++if [ ! -x "$JAVACMD" ] ; then
++  echo "Error: JAVA_HOME is not defined correctly." >&2
++  echo "  We cannot execute $JAVACMD" >&2
++  exit 1
++fi
++
++if [ -z "$JAVA_HOME" ] ; then
++  echo "Warning: JAVA_HOME environment variable is not set."
++fi
++
++CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher
++
++# traverses directory structure from process work directory to filesystem root
++# first directory with .mvn subdirectory is considered project base directory
++find_maven_basedir() {
++
++  if [ -z "$1" ]
++  then
++    echo "Path not specified to find_maven_basedir"
++    return 1
++  fi
++
++  basedir="$1"
++  wdir="$1"
++  while [ "$wdir" != '/' ] ; do
++    if [ -d "$wdir"/.mvn ] ; then
++      basedir=$wdir
++      break
++    fi
++    # workaround for JBEAP-8937 (on Solaris 10/Sparc)
++    if [ -d "${wdir}" ]; then
++      wdir=`cd "$wdir/.."; pwd`
++    fi
++    # end of workaround
++  done
++  echo "${basedir}"
++}
++
++# concatenates all lines of a file
++concat_lines() {
++  if [ -f "$1" ]; then
++    echo "$(tr -s '\n' ' ' < "$1")"
++  fi
++}
++
++BASE_DIR=`find_maven_basedir "$(pwd)"`
++if [ -z "$BASE_DIR" ]; then
++  exit 1;
++fi
++
++##########################################################################################
++# Extension to allow automatically downloading the maven-wrapper.jar from Maven-central
++# This allows using the maven wrapper in projects that prohibit checking in binary data.
++##########################################################################################
++if [ -r "$BASE_DIR/.mvn/wrapper/maven-wrapper.jar" ]; then
++    if [ "$MVNW_VERBOSE" = true ]; then
++      echo "Found .mvn/wrapper/maven-wrapper.jar"
++    fi
++else
++    if [ "$MVNW_VERBOSE" = true ]; then
++      echo "Couldn't find .mvn/wrapper/maven-wrapper.jar, downloading it ..."
++    fi
++    if [ -n "$MVNW_REPOURL" ]; then
++      jarUrl="$MVNW_REPOURL/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
++    else
++      jarUrl="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar"
++    fi
++    while IFS="=" read key value; do
++      case "$key" in (wrapperUrl) jarUrl="$value"; break ;;
++      esac
++    done < "$BASE_DIR/.mvn/wrapper/maven-wrapper.properties"
++    if [ "$MVNW_VERBOSE" = true ]; then
++      echo "Downloading from: $jarUrl"
++    fi
++    wrapperJarPath="$BASE_DIR/.mvn/wrapper/maven-wrapper.jar"
++    if $cygwin; then
++      wrapperJarPath=`cygpath --path --windows "$wrapperJarPath"`
++    fi
++
++    if command -v wget > /dev/null; then
++        if [ "$MVNW_VERBOSE" = true ]; then
++          echo "Found wget ... using wget"
++        fi
++        if [ -z "$MVNW_USERNAME" ] || [ -z "$MVNW_PASSWORD" ]; then
++            wget "$jarUrl" -O "$wrapperJarPath" || rm -f "$wrapperJarPath"
++        else
++            wget --http-user=$MVNW_USERNAME --http-password=$MVNW_PASSWORD "$jarUrl" -O "$wrapperJarPath" || rm -f "$wrapperJarPath"
++        fi
++    elif command -v curl > /dev/null; then
++        if [ "$MVNW_VERBOSE" = true ]; then
++          echo "Found curl ... using curl"
++        fi
++        if [ -z "$MVNW_USERNAME" ] || [ -z "$MVNW_PASSWORD" ]; then
++            curl -o "$wrapperJarPath" "$jarUrl" -f
++        else
++            curl --user $MVNW_USERNAME:$MVNW_PASSWORD -o "$wrapperJarPath" "$jarUrl" -f
++        fi
++
++    else
++        if [ "$MVNW_VERBOSE" = true ]; then
++          echo "Falling back to using Java to download"
++        fi
++        javaClass="$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.java"
++        # For Cygwin, switch paths to Windows format before running javac
++        if $cygwin; then
++          javaClass=`cygpath --path --windows "$javaClass"`
++        fi
++        if [ -e "$javaClass" ]; then
++            if [ ! -e "$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.class" ]; then
++                if [ "$MVNW_VERBOSE" = true ]; then
++                  echo " - Compiling MavenWrapperDownloader.java ..."
++                fi
++                # Compiling the Java class
++                ("$JAVA_HOME/bin/javac" "$javaClass")
++            fi
++            if [ -e "$BASE_DIR/.mvn/wrapper/MavenWrapperDownloader.class" ]; then
++                # Running the downloader
++                if [ "$MVNW_VERBOSE" = true ]; then
++                  echo " - Running MavenWrapperDownloader.java ..."
++                fi
++                ("$JAVA_HOME/bin/java" -cp .mvn/wrapper MavenWrapperDownloader "$MAVEN_PROJECTBASEDIR")
++            fi
++        fi
++    fi
++fi
++##########################################################################################
++# End of extension
++##########################################################################################
++
++export MAVEN_PROJECTBASEDIR=${MAVEN_BASEDIR:-"$BASE_DIR"}
++if [ "$MVNW_VERBOSE" = true ]; then
++  echo $MAVEN_PROJECTBASEDIR
++fi
++MAVEN_OPTS="$(concat_lines "$MAVEN_PROJECTBASEDIR/.mvn/jvm.config") $MAVEN_OPTS"
++
++# For Cygwin, switch paths to Windows format before running java
++if $cygwin; then
++  [ -n "$M2_HOME" ] &&
++    M2_HOME=`cygpath --path --windows "$M2_HOME"`
++  [ -n "$JAVA_HOME" ] &&
++    JAVA_HOME=`cygpath --path --windows "$JAVA_HOME"`
++  [ -n "$CLASSPATH" ] &&
++    CLASSPATH=`cygpath --path --windows "$CLASSPATH"`
++  [ -n "$MAVEN_PROJECTBASEDIR" ] &&
++    MAVEN_PROJECTBASEDIR=`cygpath --path --windows "$MAVEN_PROJECTBASEDIR"`
++fi
++
++# Provide a "standardized" way to retrieve the CLI args that will
++# work with both Windows and non-Windows executions.
++MAVEN_CMD_LINE_ARGS="$MAVEN_CONFIG $@"
++export MAVEN_CMD_LINE_ARGS
++
++WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
++
++exec "$JAVACMD" \
++  $MAVEN_OPTS \
++  $MAVEN_DEBUG_OPTS \
++  -classpath "$MAVEN_PROJECTBASEDIR/.mvn/wrapper/maven-wrapper.jar" \
++  "-Dmaven.home=${M2_HOME}" \
++  "-Dmaven.multiModuleProjectDirectory=${MAVEN_PROJECTBASEDIR}" \
++  ${WRAPPER_LAUNCHER} $MAVEN_CONFIG "$@"
+Index: Library_Books.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Library_Books.csv b/Library_Books.csv
+new file mode 100644
+--- /dev/null	(date 1732940779589)
++++ b/Library_Books.csv	(date 1732940779589)
+@@ -0,0 +1,11 @@
++The Great Gatsby,F. Scott Fitzgerald,9780743273565,Not Available,arissa
++1984,George Orwell,9780451524935,Not Available,John Doe
++To Kill a Mockingbird,Harper Lee,9780061120084,Available,
++Pride and Prejudice,Jane Austen,9781503290563,Available,
++Moby Dick,Herman Melville,9781503280786,Not Available,Jane Smith
++The Catcher in the Rye,J.D. Salinger,9780316769488,Available,
++Brave New World,Aldous Huxley,9780060850524,Not Available,Emily Davis
++The Hobbit,J.R.R. Tolkien,9780547928227,Available,
++The Road,Cormac McCarthy,9780307387899,Not Available,Michael Johnson
++Animal Farm,George Orwell,9780451526342,Available,
++cvshjkl,svnmhdd,34567890,Available,
+Index: src/main/java/com/example/demo/Library_Books.csv
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/Library_Books.csv b/src/main/java/com/example/demo/Library_Books.csv
+new file mode 100644
+--- /dev/null	(date 1732957512865)
++++ b/src/main/java/com/example/demo/Library_Books.csv	(date 1732957512865)
+@@ -0,0 +1,12 @@
++Book Title,Author,ISBN,Availability,Borrower Name
++The Great Gatsby,F. Scott Fitzgerald,9780743273565,True,
++1984,George Orwell,9780451524935,False,John Doe
++To Kill a Mockingbird,Harper Lee,9780061120084,True,
++Pride and Prejudice,Jane Austen,9781503290563,True,
++Moby Dick,Herman Melville,9781503280786,False,Jane Smith
++The Catcher in the Rye,J.D. Salinger,9780316769488,True,
++Brave New World,Aldous Huxley,9780060850524,False,Emily Davis
++The Hobbit,J.R.R. Tolkien,9780547928227,True,
++The Road,Cormac McCarthy,9780307387899,False,Michael Johnson
++Animal Farm,George Orwell,9780451526342,True,
++New book,Me,345678,True,
+Index: src/main/java/module-info.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/module-info.java b/src/main/java/module-info.java
+new file mode 100644
+--- /dev/null	(date 1732712451396)
++++ b/src/main/java/module-info.java	(date 1732712451396)
+@@ -0,0 +1,9 @@
++module com.example.demo {
++    requires javafx.controls;
++    requires javafx.fxml;
++    requires java.desktop;
++
++
++    opens com.example.demo to javafx.fxml;
++    exports com.example.demo;
++}
+\ No newline at end of file
+Index: src/main/java/com/example/demo/HelloApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/HelloApplication.java b/src/main/java/com/example/demo/HelloApplication.java
+new file mode 100644
+--- /dev/null	(date 1732951934027)
++++ b/src/main/java/com/example/demo/HelloApplication.java	(date 1732951934027)
+@@ -0,0 +1,46 @@
++package com.example.demo;
++
++import javafx.application.Application;
++import javafx.event.ActionEvent;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Node;
++import javafx.scene.Scene;
++import javafx.stage.Stage;
++
++import java.io.IOException;
++
++public class HelloApplication extends Application {
++    private static Stage stage;
++
++    @Override
++    public void start(Stage stage) throws IOException {
++        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
++        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
++        stage.setTitle("Library Management System - Login");
++        stage.setScene(scene);
++        stage.show();
++    }
++
++    // Method to switch to the dashboard
++    public static void switchToDashboard(ActionEvent event) {
++        try {
++            // Load the dashboard FXML
++            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Dashboard.fxml"));
++            Scene dashboardScene = new Scene(fxmlLoader.load());
++
++            // Get the stage from the event source
++            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
++
++            // Set the new scene and show it
++            stage.setScene(dashboardScene);
++            stage.setTitle("Library Management System - Dashboard");
++            stage.show();
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
++    }
++
++    public static void main(String[] args) {
++        launch();
++    }
++}
+Index: src/main/java/com/example/demo/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/demo/HelloController.java b/src/main/java/com/example/demo/HelloController.java
+new file mode 100644
+--- /dev/null	(date 1732949280758)
++++ b/src/main/java/com/example/demo/HelloController.java	(date 1732949280758)
+@@ -0,0 +1,58 @@
++package com.example.demo;
++import javafx.event.ActionEvent;
++import javafx.fxml.FXML;
++import javafx.fxml.FXMLLoader;
++import javafx.scene.Node;
++import javafx.scene.Scene;
++import javafx.scene.control.Alert;
++import javafx.scene.control.Button;
++import javafx.scene.control.TextField;
++import javafx.stage.Stage;
++
++public class HelloController {
++
++    @FXML
++    private TextField nameField;
++
++    @FXML
++    private Button login;
++
++    private String savedName;
++
++    @FXML
++    private void handleLogin(ActionEvent event) {
++        String name = nameField.getText().trim();
++
++        if (name.isEmpty()) {
++            // Show an alert if the name field is empty
++            Alert alert = new Alert(Alert.AlertType.WARNING);
++            alert.setTitle("Login Error");
++            alert.setHeaderText("Name Field is Empty");
++            alert.setContentText("Please enter your name before logging in.");
++            alert.showAndWait();
++        } else {
++            try {
++                // Load the dashboard FXML file
++                FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
++                Scene dashboardScene = new Scene(loader.load());
++
++                // Get the controller for the dashboard
++                Dashboard controller = loader.getController();
++                controller.setUsername(name); // Pass the username to the dashboard
++
++                // Switch to the dashboard scene
++                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
++                stage.setScene(dashboardScene);
++                stage.show();
++            } catch (Exception e) {
++                e.printStackTrace();
++            }
++        }
++    }
++
++
++    // Getter for the saved name (optional, if you need it elsewhere)
++    public String getSavedName() {
++        return savedName;
++    }
++}
